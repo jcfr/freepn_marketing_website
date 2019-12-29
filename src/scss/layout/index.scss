@@ -44,8 +44,10 @@
 }
 
 .header_nav_link {
-	margin-left: 20px;
+	margin-left: 30px;
 	transition: all 0.5s ease;
+	font-size: 13px;
+	font-weight: 600;
 }
 
 .header_nav_link:hover {
@@ -65,6 +67,7 @@
 .landing_section_one {
 	min-height: 100vh;
 	background-color: #fb8c00;
+	background-image: url("../images/circuit_board_background.svg");
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -72,21 +75,74 @@
 	color: #ffffff;
 	font-family: sans-serif;
 	text-align: center;
-	padding: 0 5%;
+	padding: 50px 5% 0 5%;
 }
 
 .landing_section_one_tagline {
 	font-size: 65px;
 	font-weight: 600;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 	max-width: 680px;
 }
 
 .landing_section_one_sub_tagline {
-	font-size: 20px;
-	margin-bottom: 75px;
+	font-size: 18px;
+	margin-bottom: 60px;
 	color: #ffecb3;
 	max-width: 600px;
+	word-break: keep-all;
+}
+
+.landing_section_one_button_download {
+	padding: 0 25px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	color: #fb8c00;
+	margin-bottom: 90px;
+	transition: all 0.5s ease;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing_section_one_button_download:hover {
+	background-color: #ffecb3;
+}
+
+.landing_section_one_button_download_img {
+	width: 20px;
+}
+
+.landing_section_one_button_download_text {
+	margin-left: 15px;
+	line-height: 55px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.landing_section_one_button_other {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.landing_section_one_button_other:hover {
+	opacity: 0.75;
+}
+
+.landing_section_one_button_other_text {
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+.landing_section_one_button_other_img {
+	width: 20px;
 }
 
 .landing_section_two {
