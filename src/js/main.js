@@ -22,7 +22,7 @@
 
 // animates scroll to anchor events on click
 (function scroll () {
-  let element = document.querySelector('a[href^="#test_anchor"]')
+  let element = document.querySelector('a[href^="#"]')
   element.addEventListener('click', function (event) {
     event.preventDefault()
     document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' })
