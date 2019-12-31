@@ -105,6 +105,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
 }
 
 .landing_section_one_button_download:hover {
@@ -190,7 +191,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	border-collapse: collapse;
 	border-spacing: 0;
-	padding: 18px 32px;
+	// padding: 18px 32px;
 }
 
 .landing_section_two_table .landing_section_two_table_data_empty {
@@ -230,19 +231,17 @@
 	font-weight: 400;
 }
 
+.landing_section_two_table_data_wrapper {
+	padding: 18px 32px;
+}
+
 .landing_section_two_table_data_img {
-	opacity: 0.5;
+	opacity: 0.75;
 	transition: all 0.5s ease;
 }
 
 .landing_section_two_table td:hover img {
 	opacity: 1;
-}
-
-.landing_section_two_table_download_link {
-	border: 1px solid red;
-	width: 100%;
-	height: 100%;
 }
 
 .landing_section_three {
