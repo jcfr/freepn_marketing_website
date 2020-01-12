@@ -94,7 +94,7 @@
 	font-size: 18px;
 	line-height: 27px;
 	margin-bottom: 60px;
-	color: #ffecb3;
+	color: rgba(255, 255, 255, 0.75);
 	max-width: 600px;
 	word-break: keep-all;
 }
@@ -180,6 +180,7 @@
 	font-weight: 600;
 	font-size: 15px;
 	margin-bottom: 30px;
+	color: rgba(0, 0, 0, 0.75);
 }
 
 .landing_section_two_table {
@@ -233,6 +234,7 @@
 
 .landing_section_two_table_data_extension {
 	font-weight: 400;
+	color: rgba(0, 0, 0, 0.75);
 }
 
 .landing_section_two_table_data_wrapper {
@@ -298,6 +300,7 @@
 	font-weight: 400;
 	text-align: center;
 	height: 170px;
+	color: rgba(0, 0, 0, 0.75);
 }
 
 .landing_section_three_content_body_text a {
@@ -360,6 +363,7 @@
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 30px;
+	color: rgba(255, 255, 255, 0.75);
 }
 
 .landing_section_four_content_img {
@@ -391,6 +395,7 @@
 	font-weight: 600;
 	font-size: 24px;
 	margin-bottom: 60px;
+	color: rgba(0, 0, 0, 0.75);
 }
 
 .landing_section_five_button_download {
@@ -437,6 +442,80 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0 5%;
+	padding: 5% 5%;
 	font-family: sans-serif;
+}
+
+.footer_link_section {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.footer_link_column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 250px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.footer_link_column_social {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 150px;
+	width: 100%;
+}
+
+.footer_link_header {
+	color: rgba(255, 255, 255, 0.4);
+	font-weight: 600;
+	font-size: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.footer_link {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.footer_link:hover {
+	opacity: 0.5;
+}
+
+.footer_link_social_icons {
+	width: 100%;
+}
+
+.footer_link_img {
+	width: 20px;
+	padding: 5px;
+}
+
+.footer_content hr {
+	color: rgba(0, 0, 0, 0.2);
+	width: 100%;
+	margin: 30px 0;
+	border: 0 0 1px 0;
+}
+
+.footer_copyright_text {
+	font-weight: 400;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.4);
+	text-align: left;
+	width: 100%;
+	line-height: 26px;
 }
