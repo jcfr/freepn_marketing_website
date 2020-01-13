@@ -257,7 +257,7 @@
 	align-items: center;
 	flex-wrap: wrap-reverse;
 	padding: 15px;
-	margin: 15px;
+	margin: 30px;
 }
 
 .landing_section_four_content_item_alt {
@@ -268,7 +268,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 15px;
-	margin: 15px;
+	margin: 30px;
 }
 
 .landing_section_four_content_text {
@@ -285,6 +285,7 @@
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 20px;
+	margin-top: 30px;
 }
 
 .landing_section_four_content_text_body {
@@ -298,7 +299,7 @@
 
 .landing_section_four_content_img {
 	width: 200px;
-	padding: 30px;
+	padding: 0 30px;
 }
 
 .landing_section_five {
@@ -313,7 +314,7 @@
 }
 
 .landing_section_five_tagline {
-	text-align: left;
+	text-align: center;
 	font-weight: 600;
 	font-size: 32px;
 	margin-bottom: 30px;
@@ -321,7 +322,7 @@
 }
 
 .landing_section_five_sub_tagline {
-	text-align: left;
+	text-align: center;
 	font-weight: 600;
 	font-size: 24px;
 	margin-bottom: 60px;
