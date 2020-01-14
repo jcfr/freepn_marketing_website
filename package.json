@@ -17,6 +17,7 @@
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "lint": "eslint src/js || true",
+    "lint_fix": "eslint --fix src/js || true",
     "lint-scss": "stylelint src/scss/*.scss --syntax scss || true",
     "uglify": "yarn run uglify-script",
     "imagemin": "imagemin src/images/* -o dist/images",
