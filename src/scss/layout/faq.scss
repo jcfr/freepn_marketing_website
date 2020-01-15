@@ -50,6 +50,14 @@
 	margin-bottom: 30px;
 	color: rgba(0, 0, 0, 0.75);
 
+	.faq_section_one_question_details_link {
+		text-decoration: none;
+	}
+
+	code {
+		background: rgba(0, 0, 0, 0.1);
+	}
+
 	&:last-child {
 		margin-bottom: 0;
 	}
