@@ -1,0 +1,112 @@
+				</div>
+
+			</div>
+		</div>
+
+    <footer>
+			<div class="footer_content">
+				<div class="footer_link_section">
+					<div class="footer_link_column">
+						<span class="footer_link_header">FreePN</span>
+						<a
+							class="footer_link"
+							href="/index.html#landing_section_two_link_anchor"
+							>Download</a
+						>
+						<a class="footer_link" href="/pages/faq.html">FAQ</a>
+						<a class="footer_link" href="/pages/blog.html">Blog</a>
+					</div>
+					<div class="footer_link_column">
+						<span class="footer_link_header">Help</span>
+						<a
+							class="footer_link"
+							href="mailto:free.private.network@gmail.com"
+							>Contact</a
+						>
+					</div>
+					<div class="footer_link_column_social">
+						<span class="footer_link_header">Follow us</span>
+						<div class="footer_link_social_icons">
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_facebook.svg"
+									alt="facebook social icon"
+								/>
+							</a>
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_instagram.svg"
+									alt="instagram social icon"
+								/>
+							</a>
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_twitter.svg"
+									alt="twitter social icon"
+								/>
+							</a>
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_youtube.svg"
+									alt="youtube social icon"
+								/>
+							</a>
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_linkedin.svg"
+									alt="linkedin social icon"
+								/>
+							</a>
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_reddit.svg"
+									alt="reddit social icon"
+								/>
+							</a>
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_hn.svg"
+									alt="hn social icon"
+								/>
+							</a>
+							<a class="footer_link" href="#" target="_blank">
+								<img
+									class="footer_link_img"
+									src="../images/social_medium.svg"
+									alt="medium social icon"
+								/>
+							</a>
+							<a
+								class="footer_link"
+								href="https://www.github.com/freepn"
+								target="_blank"
+							>
+								<img
+									class="footer_link_img"
+									src="../images/social_github.svg"
+									alt="github social icon"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<span class="footer_copyright_text"
+					>© 2022 Allieae, Inc. All rights reserved.</span
+				>
+				<span class="footer_copyright_text"
+					>Made with ❤️ by a fully remote team.</span
+				>
+			</div>
+		</footer>
+
+		<script src="../js/posts.min.js"></script>
+	</body>
+</html>
