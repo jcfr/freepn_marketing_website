@@ -99,7 +99,7 @@
 				</div>
 				<hr />
 				<span class="footer_copyright_text"
-					>© 2022 Allieae, Inc. All rights reserved.</span
+					>© 2020 Allieae, Inc. All rights reserved.</span
 				>
 				<span class="footer_copyright_text"
 					>Made with ❤️ by a fully remote team.</span
