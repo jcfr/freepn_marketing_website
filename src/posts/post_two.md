@@ -1,3 +1,8 @@
+TITLE: TEST POST TWO
+DESCRIPTION: This is a second example post. Check it out!
+AUTHOR: Ian H. Bateman
+DATE: 2020-01-20
+
 # TEST POST TWO - An exhibit of Markdown
 
 This note demonstrates some of what [Markdown][1] is capable of doing.

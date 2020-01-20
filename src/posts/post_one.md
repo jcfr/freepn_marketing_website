@@ -1,3 +1,8 @@
+TITLE: TEST POST ONE
+DESCRIPTION: This is an example post. Check it out!
+AUTHOR: Ian H. Bateman
+DATE: 2020-01-19
+
 # TEST POST ONE - An exhibit of Markdown
 
 This note demonstrates some of what [Markdown](https://www.google.com) is capable of doing.
