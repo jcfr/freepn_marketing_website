@@ -3,6 +3,7 @@ TITLE: TEST POST TWO
 DESCRIPTION: This is a second example post. Check it out!
 AUTHOR: Ian H. Bateman
 DATE: 2020-01-20
+IMAGE: https://avatars3.githubusercontent.com/u/300461?s=64&v=4
 ---
 
 # TEST POST TWO - An exhibit of Markdown

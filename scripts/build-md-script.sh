@@ -29,10 +29,10 @@ for f in ./src/posts/*.md; do
 		else
 			case "$tag" in
 				("TITLE")
-					echo "<title>FreePN - $value</title>" >> dist/posts/$FILENAME.html
+					echo '<title>FreePN - '$value'</title>' >> dist/posts/$FILENAME.html
 				;;
 				("DESCRIPTION")
-					echo "<meta name="description" content="$value" />" >> dist/posts/$FILENAME.html
+					echo '<meta name="description" content="'$value'" />' >> dist/posts/$FILENAME.html
 				;;
 				(*) 
 					echo "Error: meta tag did not match any recognized value in file: $FILENAME. Please check your md file header section!"
@@ -45,7 +45,7 @@ for f in ./src/posts/*.md; do
 	cat ./src/posts/post_stubs/post_header_part_two.txt >> dist/posts/$FILENAME.html
 	
 	# create temporary build file (and remove first 7 lines from file -- the header section)
-	tail -n +7 $f > temp_build_file.md
+	tail -n +8 $f > temp_build_file.md
 	
 	# convert build file to html
 	markdown temp_build_file.md >> dist/posts/$FILENAME.html

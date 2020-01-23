@@ -3,6 +3,7 @@ TITLE: TEST POST ONE
 DESCRIPTION: This is an example post. Check it out!
 AUTHOR: Ian H. Bateman
 DATE: 2020-01-19
+IMAGE: https://d14fqx6aetz9ka.cloudfront.net/wp-content/uploads/2020/01/20141709/20200119_TURKOWSKI_Surfline1-2730.jpg
 ---
 
 # TEST POST ONE - An exhibit of Markdown

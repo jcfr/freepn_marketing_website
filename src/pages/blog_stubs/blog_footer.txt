@@ -1,15 +1,3 @@
-				<div class="blog_section_one_post scroll_animate">
-					<img class="blog_section_one_post_img" src="" />
-					<div class="blog_section_one_post_info">
-						<span class="blog_section_one_post_title"
-							>Artcile Title</span
-						>
-						<span class="blog_section_one_post_date"
-							>01/15/2019</span
-						>
-					</div>
-				</div>
-
 </div>
 		</div>
 
