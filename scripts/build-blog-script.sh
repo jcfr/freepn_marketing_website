@@ -42,8 +42,9 @@ cat ./src/pages/blog_stubs/blog_header.txt > dist/pages/blog.html
 for f in "${FILE_ARRAY[@]}"; do
 	FILE=$(basename -- $f)
 	FILENAME="${FILE%.*}"
-
-  echo '<a class="blog_section_one_post scroll_animate" href="/posts/'$FILENAME'.html">' >> dist/pages/blog.html
+  echo '<tr>' >> dist/pages/blog.html
+  echo '  <td class="blog_section_one_post">' >> dist/pages/blog.html
+  echo '    <a href="/posts/'$FILENAME'.html">' >> dist/pages/blog.html
 
   declare -a ARTICLE_ARRAY
 
@@ -62,24 +63,26 @@ for f in "${FILE_ARRAY[@]}"; do
     else
       case "$tag" in
         ("TITLE")
-          ARTICLE_ARRAY[0]='    <span class="blog_section_one_post_title">'$value'</span>'
+          ARTICLE_ARRAY[0]='      <span class="blog_section_one_post_title">'$value'</span>'
         ;;
         ("DESCRIPTION")
-          ARTICLE_ARRAY[1]='    <span class="blog_section_one_post_description">'$value'</span>'
+          ARTICLE_ARRAY[1]='      <span class="blog_section_one_post_description">'$value'</span>'
         ;;
         ("AUTHOR")
-          ARTICLE_ARRAY[2]='    <span class="blog_section_one_post_author">'$value'</span>'
+          ARTICLE_ARRAY[2]='      <span class="blog_section_one_post_author">'$value'</span>'
         ;;
         ("DATE")
-          ARTICLE_ARRAY[3]='    <span class="blog_section_one_post_date">'$value'</span>'
+          ARTICLE_ARRAY[3]='      <span class="blog_section_one_post_date">'$value'</span>'
         ;;
         ("IMAGE")
           value_two=$(echo "${ADDR[2]}" | sed 's/^[[:space:]]*//') # gets the value and trims leading whitespace
           # if array is of size 2, then it's an internal link, otherwise, it must be an external link (with a colon ':')
           if [ ${#ADDR[@]} -eq 2 ]; then
-            ARTICLE_ARRAY[4]='    <img class="blog_section_one_post_img" src="'$value'" />'
+            ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img" src="'$value'" />'
+            # ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img" src="''" />'
           else
-            ARTICLE_ARRAY[4]='    <img class="blog_section_one_post_img" src="'$value':'$value_two'" />'
+            ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img" src="'$value':'$value_two'" />'
+            # ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img" src="''" />'
           fi
         ;;
         (*) 
@@ -91,16 +94,17 @@ for f in "${FILE_ARRAY[@]}"; do
 
   # build the HTML
   echo ${ARTICLE_ARRAY[4]} >> dist/pages/blog.html # image tag
-  echo '  <div class="blog_section_one_post_info">' >> dist/pages/blog.html
+  echo '    <div class="blog_section_one_post_info">' >> dist/pages/blog.html
   echo ${ARTICLE_ARRAY[0]} >> dist/pages/blog.html # title
   echo ${ARTICLE_ARRAY[1]} >> dist/pages/blog.html # description
-  echo '    <div class="blog_section_one_post_info_bottom">' >> dist/pages/blog.html
+  echo '      <div class="blog_section_one_post_info_bottom">' >> dist/pages/blog.html
   echo ${ARTICLE_ARRAY[2]} >> dist/pages/blog.html # author
   echo ${ARTICLE_ARRAY[3]} >> dist/pages/blog.html # date
-  echo '    </div>' >> dist/pages/blog.html
-  echo '  </div>' >> dist/pages/blog.html
-  echo '</a>' >> dist/pages/blog.html
-
+  echo '      </div>' >> dist/pages/blog.html
+  echo '      </div>' >> dist/pages/blog.html
+  echo '    </a>' >> dist/pages/blog.html
+  echo '  </td>' >> dist/pages/blog.html
+  echo '</tr>' >> dist/pages/blog.html
 done
 
 # add footer section

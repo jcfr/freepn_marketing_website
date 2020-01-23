@@ -59,4 +59,5 @@
 			<div class="blog_section_one_sub_tagline scroll_animate">
 				The lastest posts, news, and updates from FreePN.
 			</div>
-			<div class="blog_section_one_post_wrapper">
+			<table id="article_table">
+				<tbody class="blog_section_one_post_wrapper">
