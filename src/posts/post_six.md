@@ -1,5 +1,5 @@
 ---
-TITLE: WELCOME to the PRIVACY Revolution! TEST TEST TEST TEST TEST
+TITLE: 1
 DESCRIPTION: This is a second example post. Check it out! This is also a really long description!!
 AUTHOR: Ian H. Bateman
 DATE: 2020-01-20
