@@ -62,8 +62,10 @@ for f in ./src/posts/*.md; do
   echo '  <div class="blog_section_one_post_info">' >> dist/pages/blog.html
   echo ${ARTICLE_ARRAY[0]} >> dist/pages/blog.html # title
   echo ${ARTICLE_ARRAY[1]} >> dist/pages/blog.html # description
+  echo '    <div class="blog_section_one_post_info_bottom">' >> dist/pages/blog.html
   echo ${ARTICLE_ARRAY[2]} >> dist/pages/blog.html # author
   echo ${ARTICLE_ARRAY[3]} >> dist/pages/blog.html # date
+  echo '    </div>' >> dist/pages/blog.html
   echo '  </div>' >> dist/pages/blog.html
   echo '</a>' >> dist/pages/blog.html
 

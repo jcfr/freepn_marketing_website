@@ -1,6 +1,6 @@
 ---
 TITLE: TEST POST 3
-DESCRIPTION: This is a yet another example post. Check it out!
+DESCRIPTION: This is a yet another example post. Check it out! Right here my D-O-GG.
 AUTHOR: Steve Arnold
 DATE: 2020-01-21
 IMAGE: https://d14fqx6aetz9ka.cloudfront.net/wp-content/uploads/2020/01/20141709/20200119_TURKOWSKI_Surfline1-2730.jpg
@@ -19,9 +19,11 @@ Insert meme here.
 
 -   sorting files on index page
 -   **link articles on index page**
--   finish index page styling
+-   **finish index page initial styling**
 -   insert footer social links
+-   blog index page pagination
 -   terms page
 -   add blockquote styling on md pages
+-   404.html (must be in root of project next to index.html)
 
 > "You miss 100% of the shots you take" -- Albert Einstein
