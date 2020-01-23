@@ -20,7 +20,8 @@ Insert meme here.
 -   sorting files on index page
 -   **link articles on index page**
 -   **finish index page initial styling**
--   insert footer social links
+-   make protonmail email and update email addresses
+-   **insert footer social links**
 -   blog index page pagination
 -   terms page
 -   add blockquote styling on md pages
