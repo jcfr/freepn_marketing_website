@@ -47,6 +47,13 @@
 		text-decoration: none;
 	}
 
+	blockquote {
+		background-color: rgba(0, 0, 0, 0.1);
+		overflow-x: scroll;
+		padding: 0 15px;
+		border-radius: 2px;
+	}
+
 	pre {
 		background-color: rgba(0, 0, 0, 0.1);
 		overflow-x: scroll;

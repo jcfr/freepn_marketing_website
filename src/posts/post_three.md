@@ -24,7 +24,7 @@ Insert meme here.
 -   **insert footer social links**
 -   blog index page pagination
 -   terms page
--   add blockquote styling on md pages
+-   **add blockquote styling on md pages**
 -   404.html (must be in root of project next to index.html)
 
-> "You miss 100% of the shots you take" -- Albert Einstein
+> "You miss 100% of the shots you take, don't ask a fish to climb a tree, they're not good at that and will think they're stupid" -- Albert Einstein
