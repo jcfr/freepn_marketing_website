@@ -17,14 +17,16 @@ Insert meme here.
 
 ### STILL HAVE TO DO
 
--   sorting files on index page
+-   **sorting files on index page**
 -   **link articles on index page**
 -   **finish index page initial styling**
--   make protonmail email and update email addresses
 -   **insert footer social links**
+-   **add blockquote styling on md pages**
+-   make protonmail email and update email addresses
 -   blog index page pagination
 -   terms page
--   **add blockquote styling on md pages**
 -   404.html (must be in root of project next to index.html)
+
+> BONGO BONGO -- MOJO JOJO
 
 > "You miss 100% of the shots you take, don't ask a fish to climb a tree, they're not good at that and will think they're stupid" -- Albert Einstein
