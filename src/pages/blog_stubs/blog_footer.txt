@@ -132,7 +132,7 @@
 			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script src="../js/fancyTable.min.js"></script>
+		<script src="../js/pagination.min.js"></script>
 		<script src="../js/blog.min.js"></script>
 	</body>
 </html>

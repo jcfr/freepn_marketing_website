@@ -1,20 +1,13 @@
-/*!
- * jQuery fancyTable plugin
- * https://github.com/myspace-nu
- *
- * Copyright 2018 Johan Johansson
- * Released under the MIT license
- */
 /* eslint-disable */
 (function($) {
-  $.fn.fancyTable = function(options) {
+  $.fn.blogPagination = function(options) {
     var settings = $.extend(
       {
         inputStyle: "",
         inputPlaceholder: "Search...",
         pagination: false,
-        paginationClass: "btn btn-light",
-        paginationClassActive: "active",
+        paginationClass: "blog_pagination_index",
+        paginationClassActive: "blog_pagination_index_active",
         pagClosest: 3,
         perPage: 10,
         sortable: true,
@@ -28,7 +21,7 @@
     var instance = this;
     this.settings = settings;
     this.tableUpdate = function(elm) {
-      elm.fancyTable.matches = 0;
+      elm.blogPagination.matches = 0;
       $(elm)
         .find("tbody tr")
         .each(function() {
@@ -40,16 +33,18 @@
             .each(function() {
               if (
                 !settings.globalSearch &&
-                elm.fancyTable.searchArr[n] &&
-                !new RegExp(elm.fancyTable.searchArr[n], "i").test(
+                elm.blogPagination.searchArr[n] &&
+                !new RegExp(elm.blogPagination.searchArr[n], "i").test(
                   $(this).html()
                 )
               ) {
                 match = false;
               } else if (
                 settings.globalSearch &&
-                (!elm.fancyTable.search ||
-                  new RegExp(elm.fancyTable.search, "i").test($(this).html()))
+                (!elm.blogPagination.search ||
+                  new RegExp(elm.blogPagination.search, "i").test(
+                    $(this).html()
+                  ))
               ) {
                 if (
                   !Array.isArray(settings.globalSearchExcludeColumns) ||
@@ -64,13 +59,13 @@
             (settings.globalSearch && globalMatch) ||
             (!settings.globalSearch && match)
           ) {
-            elm.fancyTable.matches++;
+            elm.blogPagination.matches++;
             if (
               !settings.pagination ||
-              (elm.fancyTable.matches >
-                elm.fancyTable.perPage * (elm.fancyTable.page - 1) &&
-                elm.fancyTable.matches <=
-                  elm.fancyTable.perPage * elm.fancyTable.page)
+              (elm.blogPagination.matches >
+                elm.blogPagination.perPage * (elm.blogPagination.page - 1) &&
+                elm.blogPagination.matches <=
+                  elm.blogPagination.perPage * elm.blogPagination.page)
             ) {
               $(this).show();
             } else {
@@ -80,20 +75,20 @@
             $(this).hide();
           }
         });
-      elm.fancyTable.pages = Math.ceil(
-        elm.fancyTable.matches / elm.fancyTable.perPage
+      elm.blogPagination.pages = Math.ceil(
+        elm.blogPagination.matches / elm.blogPagination.perPage
       );
       if (settings.pagination) {
-        var paginationElement = elm.fancyTable.paginationElement
-          ? $(elm.fancyTable.paginationElement)
+        var paginationElement = elm.blogPagination.paginationElement
+          ? $(elm.blogPagination.paginationElement)
           : $(elm).find(".pag");
         paginationElement.empty();
-        for (var n = 1; n <= elm.fancyTable.pages; n++) {
+        for (var n = 1; n <= elm.blogPagination.pages; n++) {
           if (
             n == 1 ||
-            (n > elm.fancyTable.page - (settings.pagClosest + 1) &&
-              n < elm.fancyTable.page + (settings.pagClosest + 1)) ||
-            n == elm.fancyTable.pages
+            (n > elm.blogPagination.page - (settings.pagClosest + 1) &&
+              n < elm.blogPagination.page + (settings.pagClosest + 1)) ||
+            n == elm.blogPagination.pages
           ) {
             var a = $("<a>", {
               html: n,
@@ -102,22 +97,24 @@
               class:
                 settings.paginationClass +
                 " " +
-                (n == elm.fancyTable.page ? settings.paginationClassActive : "")
+                (n == elm.blogPagination.page
+                  ? settings.paginationClassActive
+                  : "")
             })
               .css("cursor", "pointer")
               .bind("click", function() {
-                elm.fancyTable.page = $(this).data("n");
+                elm.blogPagination.page = $(this).data("n");
                 instance.tableUpdate(elm);
               });
             if (
-              n == elm.fancyTable.pages &&
-              elm.fancyTable.page <
-                elm.fancyTable.pages - settings.pagClosest - 1
+              n == elm.blogPagination.pages &&
+              elm.blogPagination.page <
+                elm.blogPagination.pages - settings.pagClosest - 1
             ) {
               paginationElement.append($("<span>...</span>"));
             }
             paginationElement.append(a);
-            if (n == 1 && elm.fancyTable.page > settings.pagClosest + 2) {
+            if (n == 1 && elm.blogPagination.page > settings.pagClosest + 2) {
               paginationElement.append($("<span>...</span>"));
             }
           }
@@ -135,12 +132,12 @@
           .find("tr.fancySearchRow")
           .remove();
       });
-      $(this).fancyTable(this.settings);
+      $(this).blogPagination(this.settings);
     };
     this.tableSort = function(elm) {
       if (
-        typeof elm.fancyTable.sortColumn !== "undefined" &&
-        elm.fancyTable.sortColumn < elm.fancyTable.nColumns
+        typeof elm.blogPagination.sortColumn !== "undefined" &&
+        elm.blogPagination.sortColumn < elm.blogPagination.nColumns
       ) {
         $(elm)
           .find("thead th div.sortArrow")
@@ -156,13 +153,13 @@
           "border-right": "0.4em solid transparent"
         });
         sortArrow.css(
-          elm.fancyTable.sortOrder > 0
+          elm.blogPagination.sortOrder > 0
             ? { "border-top": "0.4em solid #000" }
             : { "border-bottom": "0.4em solid #000" }
         );
         $(elm)
           .find("thead th a")
-          .eq(elm.fancyTable.sortColumn)
+          .eq(elm.blogPagination.sortColumn)
           .append(sortArrow);
         var rows = $(elm)
           .find("tbody tr")
@@ -170,21 +167,24 @@
           .sort(function(a, b) {
             var stra = $(a)
               .find("td")
-              .eq(elm.fancyTable.sortColumn)
+              .eq(elm.blogPagination.sortColumn)
               .html();
             var strb = $(b)
               .find("td")
-              .eq(elm.fancyTable.sortColumn)
+              .eq(elm.blogPagination.sortColumn)
               .html();
-            if (elm.fancyTable.sortAs[elm.fancyTable.sortColumn] == "numeric") {
-              return elm.fancyTable.sortOrder > 0
+            if (
+              elm.blogPagination.sortAs[elm.blogPagination.sortColumn] ==
+              "numeric"
+            ) {
+              return elm.blogPagination.sortOrder > 0
                 ? parseFloat(stra) - parseFloat(strb)
                 : parseFloat(strb) - parseFloat(stra);
             } else {
               return stra < strb
-                ? -elm.fancyTable.sortOrder
+                ? -elm.blogPagination.sortOrder
                 : stra > strb
-                ? elm.fancyTable.sortOrder
+                ? elm.blogPagination.sortOrder
                 : 0;
             }
           });
@@ -196,11 +196,11 @@
     };
     this.each(function() {
       if ($(this).prop("tagName") !== "TABLE") {
-        console.warn("fancyTable: Element is not a table.");
+        console.warn("blogPagination: Element is not a table.");
         return true;
       }
       var elm = this;
-      elm.fancyTable = {
+      elm.blogPagination = {
         nColumns: $(elm)
           .find("td")
           .first()
@@ -244,7 +244,7 @@
         $(elm)
           .find("thead th")
           .each(function() {
-            elm.fancyTable.sortAs.push(
+            elm.blogPagination.sortAs.push(
               $(this).data("sortas") == "numeric" ? "numeric" : ""
             );
             var content = $(this).html();
@@ -255,12 +255,12 @@
             })
               .css("cursor", "pointer")
               .bind("click", function() {
-                if (elm.fancyTable.sortColumn == $(this).data("n")) {
-                  elm.fancyTable.sortOrder = -elm.fancyTable.sortOrder;
+                if (elm.blogPagination.sortColumn == $(this).data("n")) {
+                  elm.blogPagination.sortOrder = -elm.blogPagination.sortOrder;
                 } else {
-                  elm.fancyTable.sortOrder = 1;
+                  elm.blogPagination.sortOrder = 1;
                 }
-                elm.fancyTable.sortColumn = $(this).data("n");
+                elm.blogPagination.sortColumn = $(this).data("n");
                 instance.tableSort(elm);
                 instance.tableUpdate(elm);
               });
@@ -276,13 +276,13 @@
             placeholder: settings.inputPlaceholder,
             style: "width:100%;" + settings.inputStyle
           }).bind("change paste keyup", function() {
-            elm.fancyTable.search = $(this).val();
-            elm.fancyTable.page = 1;
+            elm.blogPagination.search = $(this).val();
+            elm.blogPagination.page = 1;
             instance.tableUpdate(elm);
           });
           var th = $("<th>", { style: "padding:2px;" }).attr(
             "colspan",
-            elm.fancyTable.nColumns
+            elm.blogPagination.nColumns
           );
           $(searchField).appendTo($(th));
           $(th).appendTo($(searchHeader));
@@ -294,14 +294,14 @@
             .parent()
             .find("td")
             .each(function() {
-              elm.fancyTable.searchArr.push("");
+              elm.blogPagination.searchArr.push("");
               var searchField = $("<input>", {
                 "data-n": n,
                 placeholder: settings.inputPlaceholder,
                 style: "width:100%;" + settings.inputStyle
               }).bind("change paste keyup", function() {
-                elm.fancyTable.searchArr[$(this).data("n")] = $(this).val();
-                elm.fancyTable.page = 1;
+                elm.blogPagination.searchArr[$(this).data("n")] = $(this).val();
+                elm.blogPagination.page = 1;
                 instance.tableUpdate(elm);
               });
               var th = $("<th>", { style: "padding:2px;" });
@@ -324,7 +324,7 @@
           .append(
             $("<td class='pag'></td>", {}).attr(
               "colspan",
-              elm.fancyTable.nColumns
+              elm.blogPagination.nColumns
             )
           );
       }
