@@ -18,38 +18,16 @@
       interval: 150
     })
   }
-})();
-
-(function paginate () {
-  // Load the script
-  var script = document.createElement('SCRIPT')
-  script.src = 'https://code.jquery.com/jquery-3.3.1.slim.min.js'
-  script.type = 'text/javascript'
-  document.getElementsByTagName('head')[0].appendChild(script)
-
-  // Poll for jQuery to come into existance
-  var checkReady = function (callback) {
-    if (window.jQuery) {
-      /* eslint-disable-next-line */
-      callback(jQuery);
-    } else {
-      window.setTimeout(function () {
-        checkReady(callback)
-      }, 20)
-    }
-  }
-
-  // Start polling...
-  checkReady(function ($) {
-    $(function () {
-      $('#article_table').blogPagination({
-        searchable: false,
-        pagination: true,
-        paginationClass: 'blog_pagination_index',
-        paginationClassActive: 'blog_pagination_index_active',
-        pagClosest: 1,
-        perPage: 4
-      })
-    })
-  })
 })()
+
+/* eslint-disable */
+$(document).ready(function() {
+  $("#article_table").blogPagination({
+    searchable: false,
+    pagination: true,
+    paginationClass: "blog_pagination_index",
+    paginationClassActive: "blog_pagination_index_active",
+    pagClosest: 1,
+    perPage: 4
+  });
+});
