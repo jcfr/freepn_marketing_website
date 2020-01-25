@@ -5,6 +5,9 @@
 
 declare -a DATE_ARRAY
 
+# first, remove the exiting blog file
+rm dist/pages/blog.html
+
 # get markdown files in posts folder
 # and get the date fields from the files
 # create an array in the format date|filename
@@ -75,23 +78,15 @@ for f in "${FILE_ARRAY[@]}"; do
           ARTICLE_ARRAY[3]='      <span class="blog_section_one_post_date">'$value'</span>'
         ;;
         ("IMAGE")
-          value_two=$(echo "${ADDR[2]}" | sed 's/^[[:space:]]*//') # gets the value and trims leading whitespace
           # if array is of size 1, then no image link provided, 
           # elif size 2, then it's an internal link, 
           # else, it must be an external link (with a colon ':')
           if [ ${#ADDR[@]} -eq 1 ]; then
-            # if it's the default image, get a random background color
-            color[0]="random_img_color_zero"
-            color[1]="random_img_color_one"
-            color[2]="random_img_color_two"
-            color[3]="random_img_color_three"
-            color[4]="random_img_color_four"
-            color[5]="random_img_color_five"
-            rand=$[$RANDOM % ${#color[@]}]
-            ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img_default '${color[$rand]}'" src="../images/circuit_board_background.svg" />'
+            ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img_default" src="../images/circuit_board_background.svg" />'
           elif [ ${#ADDR[@]} -eq 2 ]; then
             ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img" src="'$value'" />'
           else
+            value_two=$(echo "${ADDR[2]}" | sed 's/^[[:space:]]*//') # gets the value and trims leading whitespace
             ARTICLE_ARRAY[4]='      <img class="blog_section_one_post_img" src="'$value':'$value_two'" />'
           fi
         ;;
