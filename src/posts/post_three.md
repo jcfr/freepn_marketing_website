@@ -1,6 +1,6 @@
 ---
 TITLE: Global Payments Has Spent At Least $488M on POS Thus Far, And It’s Looking Like A Total Disaster
-DESCRIPTION: Orchard Systems is the world's best remote store management system (RSM). ... Orchard Point of Sale (POS), the Orchard OS device management service, and blah blah blah ...
+DESCRIPTION: Orchard Systems is the world's best remote store management system (RSM). ... Orchard Point of Sale (POS), the Orchard OS device management...
 AUTHOR: Steve Arnold
 DATE: 2020-01-21
 IMAGE: https://d14fqx6aetz9ka.cloudfront.net/wp-content/uploads/2020/01/20141709/20200119_TURKOWSKI_Surfline1-2730.jpg
@@ -22,14 +22,16 @@ Insert meme here.
 -   **finish index page initial styling**
 -   **insert footer social links**
 -   **add blockquote styling on md pages**
--   blog index page pagination
+-   **blog index page pagination**
 -   fix blog index page overflow issue
--   fix blog post index styling
+-   **fix blog post index styling**
 -   fix blog post index animation
 -   document how to add blog post in README.md
 -   make protonmail email and update email addresses
 -   terms page
 -   404.html (must be in root of project next to index.html)
+-   sitemap.xml
+-   robots.txt
 
 -   deploy application
 -   draft inital blog posts
