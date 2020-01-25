@@ -1,0 +1,11 @@
+sitemap: https://www.freepn.com/sitemap.xml
+
+User-Agent: *
+
+Allow: /
+Allow: /pages/*
+Allow: /posts/*
+
+Allow: /js/*
+Allow: /css/*
+Allow: /images/*
