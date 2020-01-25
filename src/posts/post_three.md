@@ -26,7 +26,9 @@ Insert meme here.
 -   **fix blog post index styling**
 -   **fix blog index page text overflow issue**
 -   **fix blog post index animation**
--   document how to add blog post in README.md
+-   **fix cross platform footer issue**
+-   **document how to add blog post in README.md**
+-   add default image support to blog post page and blog index page
 -   make protonmail email and update email addresses
 -   terms page
 -   404.html (must be in root of project next to index.html)
