@@ -28,7 +28,7 @@ $(document).ready(function() {
     paginationClass: "blog_pagination_index",
     paginationClassActive: "blog_pagination_index_active",
     pagClosest: 1,
-    perPage: 3
+    perPage: 6
   });
 
   $(".blog_section_one_post_description").jTruncate({

@@ -24,8 +24,8 @@ Insert meme here.
 -   **add blockquote styling on md pages**
 -   **blog index page pagination**
 -   **fix blog post index styling**
--   fix blog index page text overflow issue
--   fix blog post index animation
+-   **fix blog index page text overflow issue**
+-   **fix blog post index animation**
 -   document how to add blog post in README.md
 -   make protonmail email and update email addresses
 -   terms page
