@@ -1,8 +1,8 @@
 ---
-TITLE: TEST POST ONE
+TITLE: TEST POST 4
 DESCRIPTION: This is an example post. Check it out!
 AUTHOR: Ian H. Bateman
-DATE: 2020-01-19
+DATE: 2020-01-22
 IMAGE:
 ---
 

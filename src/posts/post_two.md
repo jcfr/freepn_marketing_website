@@ -3,7 +3,7 @@ TITLE: WELCOME to the PRIVACY Revolution! TEST TEST TEST TEST TEST
 DESCRIPTION: Orchard Systems is the world's best remote store management system (RSM). ... Orchard Point of Sale (POS), the Orchard OS device management platofrm hahah no way that's crazy man I'd never believe that, you're so smart, let's be friends yeep.
 AUTHOR: Ian H. Bateman
 DATE: 2020-01-20
-IMAGE: https://avatars3.githubusercontent.com/u/300461?s=64&v=4
+IMAGE:
 ---
 
 # TEST POST TWO - An exhibit of Markdown
