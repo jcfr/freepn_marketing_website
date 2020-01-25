@@ -30,4 +30,14 @@ $(document).ready(function() {
     pagClosest: 1,
     perPage: 3
   });
+
+  $(".blog_section_one_post_description").jTruncate({
+    length: 135,
+    ellipsisText: "..."
+  });
+
+  $(".blog_section_one_post_title").jTruncate({
+    length: 75,
+    ellipsisText: "..."
+  });
 });
