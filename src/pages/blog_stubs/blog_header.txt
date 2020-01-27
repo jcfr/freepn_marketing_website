@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="canonical" href="https://freepn.com/pages/blog.html" />
 		<title>FreePN - Blog</title>
 		<meta
 			name="description"
@@ -17,7 +18,7 @@
     Hey there curious dev!
     Interested in helping shape the future of
     Privacy on the Internet?
-    Drop us a line at free.private.network@gmail.com
+    Drop us a line at contact@freepn.com
   -->
 	<body class="has_animation">
 		<header>
@@ -53,11 +54,11 @@
 		</header>
 
 		<div class="blog_section_one">
-			<div class="blog_section_one_tagline scroll_animate">
+			<h1 class="blog_section_one_tagline scroll_animate">
 				Blog
-			</div>
-			<div class="blog_section_one_sub_tagline scroll_animate">
+			</h1>
+			<h2 class="blog_section_one_sub_tagline scroll_animate">
 				The lastest posts, news, and updates from FreePN.
-			</div>
-			<table id="article_table">
+			</h2>
+			<table id="article_table" class="scroll_animate">
 				<tbody class="blog_section_one_post_wrapper">

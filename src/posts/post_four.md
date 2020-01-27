@@ -1,14 +1,14 @@
 ---
-TITLE: olution! TEST TEST TEST TEST TEST
-DESCRIPTION: This is a second example post. Check it out! This is also a really long description!!
+TITLE: TEST POST 4
+DESCRIPTION: This is an example post. Check it out!
 AUTHOR: Ian H. Bateman
-DATE: 2020-01-20
-IMAGE: https://avatars3.githubusercontent.com/u/300461?s=64&v=4
+DATE: 2020-01-22
+IMAGE:
 ---
 
-# TEST POST TWO - An exhibit of Markdown
+# TEST POST ONE - An exhibit of Markdown
 
-This note demonstrates some of what [Markdown][1] is capable of doing.
+This note demonstrates some of what [Markdown](https://www.google.com) is capable of doing.
 
 ## Basic formatting
 
@@ -40,7 +40,7 @@ Paragraphs must be separated by a blank line. Basic formatting of _italics_ and
 ### Code block
 
 ```
-Code blocks are very useful for developers and other people who look at code
+Code blocks are very useful for developers and others
 ```
 
 or other things that are written in plain text. As you can see, it uses a

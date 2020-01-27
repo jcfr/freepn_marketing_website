@@ -19,12 +19,12 @@
 						<span class="footer_link_header">Help</span>
 						<a
 							class="footer_link"
-							href="mailto:free.private.network@gmail.com?subject=Contact@FreePN"
+							href="mailto:contact@freepn.com?subject=Contact@FreePN"
 							>Contact</a
 						>
 						<a
 							class="footer_link"
-							href="mailto:free.private.network@gmail.com?subject=Careers@FreePN"
+							href="mailto:contact@freepn.com?subject=Careers@FreePN"
 							>Careers</a
 						>
 					</div>
@@ -132,7 +132,8 @@
 			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script src="../js/fancyTable.min.js"></script>
+		<script src="../js/truncate.min.js"></script>
+		<script src="../js/pagination.min.js"></script>
 		<script src="../js/blog.min.js"></script>
 	</body>
 </html>
