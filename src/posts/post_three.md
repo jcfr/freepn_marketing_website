@@ -31,7 +31,7 @@ Insert meme here.
 -   **add default image support to blog post page and blog index page**
 -   **add canonical link tag support**
 -   **robots.txt**
--   sitemap.xml
+-   **sitemap.xml**
 -   make protonmail email and update email addresses
 -   terms page
 -   404.html (must be in root of project next to index.html)

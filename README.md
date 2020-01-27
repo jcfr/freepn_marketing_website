@@ -49,6 +49,8 @@ These scripts allow you to easily add new pages to the blog! To add a new blog p
 
 ### **Some REALLY IMPORTANT things to note about adding a blog post:**
 
+The name of the file will be the url, so name things intelligently. As an example: `my_blog_post.md` will become: `https://freepn.com/posts/my_blog_post.html`, so make sure to name your file according to SEO concerns for the content - try to match the filename with the keywords you are targeting. As an addendum to this, **DO NOT USE SPECIAL CHARACTERS LIKE % \$ # \* ? ! etc. IN YOUR FILENAME!!!**
+
 Each blog post must have the following header section at the top of the file. This section should **ALWAYS** take up the top 8 lines of the file (7 lines plus one blank line at the bottom). **Having all 8 lines and keeping the order the same MATTERS. Keeping the tags like `TITLE:` the same MATTERS. You will break the blog pages if you don't follow this template.**
 
 You should copy this template exactly, changing each line after the `:` to suit your post.
