@@ -13,7 +13,7 @@ echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> dist/site
 date=$(date '+%Y-%m-%d')
 
 # root folder files
-for f in ./src/*.html; do
+for f in ./dist/*.html; do
 	FILE=$(basename -- $f)
 	FILENAME="${FILE%.*}"
   echo '  <url>' >> dist/sitemap.xml
@@ -35,7 +35,7 @@ for f in ./src/*.html; do
 done 
 
 # pages folder files
-for f in ./src/pages/*.html; do
+for f in ./dist/pages/*.html; do
 	FILE=$(basename -- $f)
 	FILENAME="${FILE%.*}"
   echo '  <url>' >> dist/sitemap.xml
@@ -46,7 +46,7 @@ for f in ./src/pages/*.html; do
   echo '  </url>' >> dist/sitemap.xml
 done 
 
-# posts folder markdown files
+# posts folder markdown files (draws from /src not /dist)
 for f in ./src/posts/*.md; do
 	FILE=$(basename -- $f)
 	FILENAME="${FILE%.*}"
