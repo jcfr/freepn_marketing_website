@@ -32,11 +32,18 @@ Insert meme here.
 -   **add canonical link tag support**
 -   **robots.txt**
 -   **sitemap.xml**
--   make protonmail email and update email addresses
+-   **make protonmail email and update email addresses**
+-   **404.html (must be in root of project next to index.html)**
 -   terms page
--   404.html (must be in root of project next to index.html)
+-   privacy page
+-   integrate matomo analytics / set up matomo analytics server
+-   look into bit.ly link tracking / source tracking in general
 -   deploy application
 -   draft inital blog posts
+-   update FAQ
+-   waitlist version
+-   move domain to gandi
+-   redirect all urls to freepn.com (frepn.com / allieae.com)
 
 > BONGO BONGO -- MOJO JOJO
 
