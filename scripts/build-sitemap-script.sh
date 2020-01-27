@@ -12,13 +12,27 @@ echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> dist/site
 # save the current date
 date=$(date '+%Y-%m-%d')
 
-# home/index page
-echo '  <url>' >> dist/sitemap.xml
-echo '    <loc>https://freepn.com/index.html</loc>' >> dist/sitemap.xml
-echo '    <lastmod>'$date'</lastmod>' >> dist/sitemap.xml
-echo '    <changefreq>weekly</changefreq>' >> dist/sitemap.xml
-echo '    <priority>1</priority>' >> dist/sitemap.xml
-echo '  </url>' >> dist/sitemap.xml
+# root folder files
+for f in ./src/*.html; do
+	FILE=$(basename -- $f)
+	FILENAME="${FILE%.*}"
+  echo '  <url>' >> dist/sitemap.xml
+  echo '    <loc>https://freepn.com/'$FILENAME'.html</loc>' >> dist/sitemap.xml
+  echo '    <lastmod>'$date'</lastmod>' >> dist/sitemap.xml
+  echo '    <changefreq>weekly</changefreq>' >> dist/sitemap.xml
+  case "$FILENAME" in
+    ("index")
+        echo '    <priority>1</priority>' >> dist/sitemap.xml
+    ;;
+    ("404")
+        echo '    <priority>0.2</priority>' >> dist/sitemap.xml
+    ;;
+    (*) 
+        echo '    <priority>0.7</priority>' >> dist/sitemap.xml
+    ;;
+  esac
+  echo '  </url>' >> dist/sitemap.xml
+done 
 
 # pages folder files
 for f in ./src/pages/*.html; do
