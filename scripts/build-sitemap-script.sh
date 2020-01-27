@@ -16,7 +16,7 @@ date=$(date '+%Y-%m-%d')
 echo '  <url>' >> dist/sitemap.xml
 echo '    <loc>https://freepn.com/index.html</loc>' >> dist/sitemap.xml
 echo '    <lastmod>'$date'</lastmod>' >> dist/sitemap.xml
-echo '    <changefreq>monthly</changefreq>' >> dist/sitemap.xml
+echo '    <changefreq>weekly</changefreq>' >> dist/sitemap.xml
 echo '    <priority>1</priority>' >> dist/sitemap.xml
 echo '  </url>' >> dist/sitemap.xml
 
@@ -27,7 +27,7 @@ for f in ./src/pages/*.html; do
   echo '  <url>' >> dist/sitemap.xml
   echo '    <loc>https://freepn.com/pages/'$FILENAME'.html</loc>' >> dist/sitemap.xml
   echo '    <lastmod>'$date'</lastmod>' >> dist/sitemap.xml
-  echo '    <changefreq>monthly</changefreq>' >> dist/sitemap.xml
+  echo '    <changefreq>weekly</changefreq>' >> dist/sitemap.xml
   echo '    <priority>0.8</priority>' >> dist/sitemap.xml
   echo '  </url>' >> dist/sitemap.xml
 done 
@@ -65,7 +65,7 @@ for f in ./src/posts/*.md; do
   fi
 
   # rest of sitemap section
-  echo '    <changefreq>yearly</changefreq>' >> dist/sitemap.xml
+  echo '    <changefreq>monthly</changefreq>' >> dist/sitemap.xml
   echo '    <priority>0.5</priority>' >> dist/sitemap.xml
   echo '  </url>' >> dist/sitemap.xml
 
