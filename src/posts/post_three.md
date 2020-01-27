@@ -29,11 +29,12 @@ Insert meme here.
 -   **fix cross platform footer issue**
 -   **document how to add blog post in README.md**
 -   **add default image support to blog post page and blog index page**
+-   **add canonical link tag support**
+-   **robots.txt**
+-   sitemap.xml
 -   make protonmail email and update email addresses
 -   terms page
 -   404.html (must be in root of project next to index.html)
--   sitemap.xml
--   robots.txt
 -   deploy application
 -   draft inital blog posts
 

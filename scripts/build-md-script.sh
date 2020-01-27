@@ -16,6 +16,9 @@ for f in ./src/posts/*.md; do
 	# build header part one
 	cat ./src/posts/post_stubs/post_header_part_one.txt > dist/posts/$FILENAME.html
 
+	# add canonical link tag
+	echo '<link rel="canonical" href="https://freepn.com/posts/'$FILENAME'.html" />' >> dist/posts/$FILENAME.html
+
 	# generate custom header tags
 	for i in {2..3}; do
 		# get lines 2 and 3 from markdown file (TITLE and DESCRIPTION)

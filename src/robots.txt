@@ -1,4 +1,4 @@
-sitemap: https://www.freepn.com/sitemap.xml
+Sitemap: https://www.freepn.com/sitemap.xml
 
 User-Agent: *
 
