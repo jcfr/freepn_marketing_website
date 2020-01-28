@@ -34,9 +34,9 @@ Insert meme here.
 -   **sitemap.xml**
 -   **make protonmail email and update email addresses**
 -   **404.html (must be in root of project next to index.html)**
+-   **integrate matomo analytics / set up matomo analytics server**
 -   terms page
 -   privacy page
--   integrate matomo analytics / set up matomo analytics server
 -   look into bit.ly link tracking / source tracking in general
 -   deploy application
 -   draft inital blog posts
