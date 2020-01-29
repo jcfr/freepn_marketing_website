@@ -38,14 +38,15 @@ Insert meme here.
 -   **terms page**
 -   **privacy page**
 -   media kit
--   update FAQ
-    -   how is this different than Tor?
-    -   how is this different than a normal VPN service?
-    -   why is this better than a normal VPN service?
-    -   how is this different than wireguard?
-    -   why should you use this? (to protect / geo unblock..)
-    -   who is this for? (anyone who wants to..)
-    -   what about peer snooping?, etc.
+-   **update FAQ page**
+-   **update FAQ**
+    -   **how is this different than Tor?**
+    -   **how is this different than a normal VPN service?**
+    -   **why is this better than a normal VPN service?**
+    -   **how is this different than wireguard?**
+    -   **why should you use this? (to protect / geo unblock..)**
+    -   **who is this for? (anyone who wants to..)**
+    -   **what about peer snooping?, etc.**
 -   draft inital blog post
 -   waitlist version
 -   deploy application
