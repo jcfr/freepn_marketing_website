@@ -48,7 +48,7 @@
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^2.0.1",
     "imagemin-cli": "^3.0.0",
-    "markdown-to-html": "^0.0.13",
+    "markdown": "^0.5.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.2",
     "npm-run-all": "^4.1.3",

@@ -35,13 +35,23 @@ Insert meme here.
 -   **make protonmail email and update email addresses**
 -   **404.html (must be in root of project next to index.html)**
 -   **integrate matomo analytics / set up matomo analytics server**
--   terms page
--   privacy page
--   look into bit.ly link tracking / source tracking in general
--   deploy application
--   draft inital blog posts
+-   **terms page**
+-   **privacy page**
+-   media kit
 -   update FAQ
+    -   how is this different than Tor?
+    -   how is this different than a normal VPN service?
+    -   why is this better than a normal VPN service?
+    -   how is this different than wireguard?
+    -   why should you use this? (to protect / geo unblock..)
+    -   who is this for? (anyone who wants to..)
+    -   what about peer snooping?, etc.
+-   draft inital blog post
 -   waitlist version
+-   deploy application
+
+-   look into bit.ly link tracking / source tracking in general
+
 -   move domain to gandi
 -   redirect all urls to freepn.com (frepn.com / allieae.com)
 

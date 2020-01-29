@@ -21,9 +21,9 @@ Once the packages have finished installing, it will start a new server, open up 
 > -   Yarn: `1.16.0`
 > -   npm: `6.9.0`
 
-> If you are having issues with the markdown or blog page generation scripts, you may want to try installing the `markdown-to-html` package globally.
+> If you are having issues with the markdown or blog page generation scripts, you may want to try installing the `markdown-js` package globally.
 >
-> -   `npm install -g markdown-to-html`
+> -   `npm install -g markdown`
 
 ## Development
 
