@@ -37,7 +37,8 @@ Insert meme here.
 -   **integrate matomo analytics / set up matomo analytics server**
 -   **terms page**
 -   **privacy page**
--   media kit
+-   **media kit**
+-   **footer link updates**
 -   **update FAQ page**
 -   **update FAQ**
     -   **how is this different than Tor?**

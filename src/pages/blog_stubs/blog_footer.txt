@@ -27,6 +27,26 @@
 							href="mailto:contact@freepn.com?subject=Careers@FreePN"
 							>Careers</a
 						>
+						<a
+							class="footer_link"
+							href="mailto:contact@freepn.com?subject=Press@FreePN"
+							>Press</a
+						>
+						<a
+							class="footer_link"
+							href="../downloads/freepn_media_kit.zip"
+							download
+							>Media Kit</a
+						>
+					</div>
+					<div class="footer_link_column">
+						<span class="footer_link_header">Legal</span>
+						<a class="footer_link" href="/pages/privacy.html"
+							>Privacy</a
+						>
+						<a class="footer_link" href="/pages/terms.html"
+							>Terms</a
+						>
 					</div>
 					<div class="footer_link_column_social">
 						<span class="footer_link_header">Follow us</span>
