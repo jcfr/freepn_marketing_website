@@ -150,3 +150,17 @@ class Details {
     })
   }
 })()
+
+// sleep utility function
+function sleep (ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+// function to set initial height on first accordion so that animation is smooth
+(async function setStyleOnLoad () {
+  await sleep(2500)
+  const element = document.getElementById('faq_section_one_first_question')
+  const height = element.offsetHeight
+  const styles = 'visibility: visible; height:' + height + 'px;'
+  element.setAttribute('style', styles)
+})()
