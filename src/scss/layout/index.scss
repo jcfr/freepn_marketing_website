@@ -392,7 +392,7 @@
 
 	#mce-EMAIL {
 		font-size: 16px;
-		line-height: 48px;
+		line-height: 16px;
 		padding: 13px 16px;
 		border-radius: 2px;
 		box-shadow: none;
@@ -447,10 +447,11 @@
 		#mce-EMAIL {
 			margin-right: 0;
 			margin-bottom: 15px;
+			max-width: none;
 		}
 
 		#mc-embedded-subscribe {
-			max-width: 326px;
+			max-width: none;
 		}
 	}
 }

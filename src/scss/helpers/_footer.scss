@@ -84,3 +84,29 @@
 	width: 100%;
 	line-height: 26px;
 }
+
+@media only screen and (max-width: 600px) {
+	.footer_link_section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer_link_column {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer_link_header {
+		text-align: center;
+	}
+
+	.footer_link_column_social {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer_link_social_icons {
+		text-align: center;
+	}
+}
