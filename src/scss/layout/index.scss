@@ -392,12 +392,14 @@
 
 	#mce-EMAIL {
 		font-size: 16px;
-		line-height: 20px;
+		line-height: 48px;
 		padding: 13px 16px;
 		border-radius: 2px;
 		box-shadow: none;
 		width: 100%;
 		max-width: 290px;
+		height: 50px;
+		box-sizing: border-box;
 		border: 2px solid #ffffff;
 		margin-right: 8px;
 		transition: border-color 0.5s ease;
@@ -405,6 +407,7 @@
 
 	#mce-EMAIL:focus {
 		border-color: #ffe0b2 !important;
+		outline: none;
 	}
 
 	#mce-EMAIL:hover {
@@ -422,7 +425,9 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		font-size: 13px;
-		line-height: 46px;
+		line-height: 48px;
+		height: 50px;
+		box-sizing: border-box;
 		text-align: center;
 		white-space: nowrap;
 		border-radius: 2px;
