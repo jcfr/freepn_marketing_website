@@ -1,7 +1,29 @@
-.faq_section_one {
-	min-height: 75vh;
+.faq_section_one_header {
+	color: #ffffff;
+	font-family: sans-serif;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 30px;
 	background-image: url("../images/circuit_board_background.svg"),
 		linear-gradient(to bottom, #e65100, #ffb74d);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.faq_section_one_header_content {
+	width: 90%;
+	margin: 0 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.faq_section_one {
+	min-height: 75vh;
+	background-color: #f5f8fa;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -16,7 +38,6 @@
 	font-size: 65px;
 	font-weight: 600;
 	margin-bottom: 15px;
-	margin-top: 50px;
 	max-width: 750px;
 	text-align: left;
 	width: 100%;
@@ -27,7 +48,6 @@
 	text-align: left;
 	font-size: 18px;
 	line-height: 27px;
-	margin-bottom: 30px;
 	color: rgba(255, 255, 255, 0.9);
 	max-width: 750px;
 	word-break: keep-all;
@@ -48,7 +68,7 @@
 	transition: all 300ms ease;
 	text-align: left;
 	margin-bottom: 30px;
-	color: rgba(0, 0, 0, 0.75);
+	color: #000000;
 
 	.faq_section_one_question_details_link {
 		text-decoration: none;
@@ -73,7 +93,7 @@
 		transition: all 300ms ease;
 
 		[open] > & {
-			color: #3f3f3f;
+			color: #000000;
 		}
 
 		// Hide the marker in Webkit
@@ -125,6 +145,7 @@
 .faq_section_one_question_details_content p {
 	margin-top: 15px;
 	margin-bottom: 15px;
+	color: rgba(0, 0, 0, 0.75);
 
 	&:first-child {
 		margin-top: 0;
